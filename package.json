@@ -9,7 +9,7 @@
     "dev": "env-cmd -f config/dev.env nodemon src/index.js --ext js,graphql --exec babel-node",
     "test": "echo \"Error: no test specified\" && exit 1",
     "get-schema": "graphql get-schema -p prisma --dotenv config/dev.env",
-    "start-db": "docker-compose up -d "
+    "start-db": "docker-compose --env-file config/dev.env up -d "
   },
   "author": "",
   "license": "ISC",
